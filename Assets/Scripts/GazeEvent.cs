@@ -11,10 +11,7 @@ public class GazeEvent : MonoBehaviour
 {
 
     public GEvent onLook;
-    {
-        SceneManager.LoadScene("VRSceneCreepy");
-    }
     
-      
+    
     
 }
