@@ -839,6 +839,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!114 &46970100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,6 +931,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!114 &65237586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,6 +3043,10 @@ MonoBehaviour:
   onLook:
     m_PersistentCalls:
       m_Calls: []
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!1001 &366761046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5733,6 +5745,10 @@ MonoBehaviour:
   onLook:
     m_PersistentCalls:
       m_Calls: []
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!1001 &601369689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9363,34 +9379,13 @@ GameObject:
   - component: {fileID: 969079749}
   - component: {fileID: 969079748}
   - component: {fileID: 969079747}
-  - component: {fileID: 969079746}
   m_Layer: 0
-  m_Name: ChangeSceneObject
+  m_Name: ChangeSceneCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &969079746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969079745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda44732ac7f4404e96b3a6794392452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hideSize: 0
-  showSize: 1
-  showRate:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &969079747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9405,7 +9400,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onLook:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 969079747}
+        m_TargetAssemblyTypeName: GazeEvent, Assembly-CSharp
+        m_MethodName: GazingThisFrame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 969079747}
+        m_TargetAssemblyTypeName: GazeEvent, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: VRSceneCreepy
+          m_BoolArgument: 0
+        m_CallState: 1
+  lookTime: 3
 --- !u!65 &969079748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9477,8 +9500,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969079745}
   m_LocalRotation: {x: -0, y: -0.25992334, z: -0, w: 0.9656293}
-  m_LocalPosition: {x: -10.48, y: 5.87, z: 39.35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -10.66, y: 5.87, z: 39.25}
+  m_LocalScale: {x: 1.9899, y: 1.9899, z: 1.9899}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -26027,6 +26050,10 @@ MonoBehaviour:
   onLook:
     m_PersistentCalls:
       m_Calls: []
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!1001 &1241326302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33018,6 +33045,10 @@ MonoBehaviour:
   onLook:
     m_PersistentCalls:
       m_Calls: []
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!1001 &1553290144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46663,6 +46694,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!114 &1914158237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46926,6 +46961,10 @@ MonoBehaviour:
   onLook:
     m_PersistentCalls:
       m_Calls: []
+  onTimerFinish:
+    m_PersistentCalls:
+      m_Calls: []
+  lookTime: 3
 --- !u!114 &1973201359
 MonoBehaviour:
   m_ObjectHideFlags: 0
