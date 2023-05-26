@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class FadeParticleTransitioner : MonoBehaviour
 {
+    int counter = 0;
+    public Transform player;
+    public Transform[] positions;
 
+    public Animator fadeController;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
